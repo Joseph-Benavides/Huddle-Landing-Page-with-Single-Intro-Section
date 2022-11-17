@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-family: "Poppins";
+    background-image: url(./images/bg-mobile.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(118, 7, 222, 0.978);
+    color: white;
+}
+
+.adjustment {
+    margin: 0 auto;
+    width: 95%;
+    max-width: 380px;    
+}
+
+/* Header */
+.header {
+    margin: 1.5em auto;
+}
+
+.logo {
+    justify-self: flex-start;
+    width: 10em;
+}
+
+/* Main */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-img {
+    margin: 1em 0 2em;
+    width: 90%;
+}
+
+.main-info {
+    text-align: center;
+}
+
+.main-title {
+    margin: 0.5em 0;
+    font-size: 1.8rem;
+}
+
+.main-paragraph {
+    margin: 1.5em 0 2.25em;
+}
+
+.register {
+    margin-bottom: 1em;
+    padding: 1em 6em;
+    font-family: "Poppins";
+    letter-spacing: 0.5px;
+    color: rgba(121, 13, 222, 0.978);
+    border-radius: 50px;
+    border: none;
+    box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.26);
+    transition: 0.35s ease-in-out;
+}
+
+.register:hover {
+    cursor: pointer;
+    background-color: rgb(193, 78, 241);
+    color: white;
+}
+
+/* Footer */
+.icons {
+    margin: 2em auto;
+    text-align: center;
+}
+
+.icons i {
+    margin: 0em 0.25em;
+    padding: 0.25em;
+    font-size: 1.75rem;
+    color: white;
+    border: 2px solid white;
+    border-radius: 1em;
+    transition: 0.35s;
+}
+
+.icons i:hover {
+    color: rgb(40, 39, 40);
+    border: 2px solid rgb(42, 42, 43);
+}
+
+
+
+@media (min-width: 800px) {
+    .adjustment {
+        max-width: 1350px;
+    }
+    main {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .main-img {
+        width: 44%;
+        max-width: 600px;
+    }
+    .main-info {
+        width: 45%;
+        max-width: 540px;
+        text-align: left;
+    }
+    .main-title {
+        font-size: 1.9rem;
+    }
+    .main-paragraph {
+        font-size: 1.125rem;
+    }
+    .icons {
+        text-align: right;
+    }
+}
+
+@media (min-width: 1000px) {
+    .main-img {
+        width: 45%;
+        max-width: 560px;
+    }
+    .main-info {
+        max-width: 600px;
+    }
+    .main-title {
+        font-size: 2.5rem;
+    }
+}
